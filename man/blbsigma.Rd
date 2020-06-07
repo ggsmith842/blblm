@@ -2,10 +2,13 @@
 % Please edit documentation in R/blblm.R
 \name{blbsigma}
 \alias{blbsigma}
-\title{compute sigma from fit}
+\title{compute sigma from fit (not compatible with lm1C)}
 \usage{
 blbsigma(fit)
 }
+\arguments{
+\item{fit}{the fitted model returned from blblm}
+}
 \description{
-compute sigma from fit
+compute sigma from fit (not compatible with lm1C)
 }

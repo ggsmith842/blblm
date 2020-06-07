@@ -6,6 +6,15 @@
 \usage{
 lm_each_subsample(formula, data, n, B)
 }
+\arguments{
+\item{formula}{a lm formula}
+
+\item{data}{a data frame containing the features mentioned in formula}
+
+\item{n}{the number of rows in the dataset}
+
+\item{B}{the number of bootstrap samples to perform}
+}
 \description{
 compute the estimates
 }

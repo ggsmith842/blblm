@@ -4,7 +4,12 @@
 \alias{blbcoef}
 \title{compute the coefficients from fit}
 \usage{
-blbcoef(fit)
+blbcoef(fit, formula)
+}
+\arguments{
+\item{fit}{the fitted model returned from blblm}
+
+\item{formula}{the formula used to fit the model}
 }
 \description{
 compute the coefficients from fit

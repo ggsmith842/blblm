@@ -2,12 +2,13 @@
 % Please edit documentation in R/blblm.R
 \docType{package}
 \name{blblm-package}
-\alias{blblm}
-\alias{blblm-package}
-\title{blblm: What the Package Does (Title Case)}
+\title{blblm: Bag of Little Bootstraps}
 \description{
-More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+The bag of little bootstraps lm package contains various functions needed to estimate a statistic using
+    the bag of little bootstraps method. Additionally, this package allows the user to make use of lm
+    formulas when finding statistics for a particular dataset. This package has been modified to include 
+    a parallelization version allowing the user to specify the number of cores desired in the primary
+    blblm function.
 }
 \details{
 Linear Regression with Little Bag of Bootstraps
