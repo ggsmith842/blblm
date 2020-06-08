@@ -25,8 +25,8 @@ Computes the blblm results using parallization with user-specified number of cor
 }
 \examples{
 \dontrun{
-cl<-makeCluster(4)
-par_blblm(mpg~hp,mtcars,10,100,cl)
+cl <- makeCluster(4)
+par_blblm(mpg ~ hp, mtcars, 10, 100, cl)
 stopCluster(cl)
 }
 }

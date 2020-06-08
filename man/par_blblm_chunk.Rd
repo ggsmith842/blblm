@@ -15,7 +15,7 @@ par_blblm_chunk(formula, data, m = 10, B = 5000, cl, ck)
 
 \item{B}{the number of bootstrap samples to take}
 
-\item{cl}{this is equvalent to makeCluster(). This is created by the user outside the funtion.}
+\item{cl}{this is equvalent to makeCluster and is created by the user outside the funtion.}
 
 \item{ck}{the chunk size}
 }
@@ -27,8 +27,9 @@ Exact to par_blblm but makes us of chunking
 }
 \examples{
 \dontrun{
-cl<-makeCluster(4)
-par_blblm(mpg~hp,mtcars,10,100,cl,2)
+cl <- makeCluster(4)
+par_blblm_chunk(mpg ~ hp, mtcars, 10, 100, cl, 2)
 stopCluster(cl)
 }
+
 }

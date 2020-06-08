@@ -22,5 +22,5 @@ the fitted lm for the bag of little bootstraps
 Calculate coefficeints using bag of little bootstraps
 }
 \examples{
-blblm(hp~mpg,mtcars,10,100)
+blblm(hp ~ mpg, mtcars, 10, 100)
 }
