@@ -34,7 +34,7 @@ stopCluster(cl)
 
 library(parallel)
 cl<-makeCluster(4)
-fit <- par_blblm(mpg ~ wt * hp, data = mtcars, m = 3, B = 100,cl,2) #2 chunks
+fit <- par_blblm_chunk(mpg ~ wt * hp, data = mtcars, m = 3, B = 100,cl,2) #2 chunks
 stopCluster(cl)
 
 coef(fit)
